@@ -1,0 +1,9 @@
+Department Internal Online System(DIOS) Change Log
+----------------
+
+Release 0.1.0
+
+  [Department Internal Online System(DIOS)-1][CONVERSIONS]
+  Arun Verma <arunverma100@gmail.com>
+  2016-06-20 20:42:29 -0800
+  Commit: 8f784b8, github.com/vermarun/DIOS
