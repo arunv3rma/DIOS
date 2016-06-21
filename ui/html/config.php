@@ -1,8 +1,8 @@
 <?php
 	$DB_SERVER = "localhost";
 	$DB_USER = "root";
-	$DB_PASS = "qweasz";
-	$DB_NAME = "mentor";
+	$DB_PASS = "";
+	$DB_NAME = "";
 
 	// 1. Create a database connection
 	$connection = mysqli_connect($DB_SERVER,$DB_USER,$DB_PASS);
@@ -10,7 +10,7 @@
 	    die("Database connection failed: " . mysqli_error());
 	}
 
-	// 2. Select a database to use 
+	// 2. Select a database to use
 	$db_select = mysqli_select_db($connection,$DB_NAME);
 	if (!$db_select) {
 	    die("Database selection failed: " . mysqli_error());
