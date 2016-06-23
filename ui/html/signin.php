@@ -15,10 +15,10 @@
                                     echo "<font color='Green'>Succefully Sign Up, You can Sign In now</font>";
                                 }
                                 elseif ($flag==1) {
-                                    echo "<font color='Red'>Invalid email address amd password</font>";
+                                    echo "<font color='Red'>Invalid LDAP Username and Password!!!</font>";
                                 }
                                 else {
-                                    echo "Please Sign In";
+                                    echo "Enter LDAP Username and Password";
                                 }
                             ?>
                          </h3>
@@ -27,16 +27,16 @@
                         <form role="form" action="login.php" method="post">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                    <input class="form-control" placeholder="LDAP Username" name="ldap_id" type="text" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Password" name="password" type="password" value="">
                                 </div>
-                                <!-- <div class="checkbox">
+                                <div class="checkbox">
                                     <label>
                                         <input name="remember" type="checkbox" value="Remember Me">Remember Me
                                     </label>
-                                </div> -->
+                                </div>
                                 <!-- Change this to a button or input when using this as a form -->
                                 <button href="index.html" class="btn btn-primary btn-lg btn-block">Login</button>
 

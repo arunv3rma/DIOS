@@ -31,7 +31,7 @@ function ldap_auth($ldap_id, $ldap_password){
     $sr = ldap_search($ds,"dc=iitb,dc=ac,dc=in","(uid=$ldap_id)");
     $info = ldap_get_entries($ds, $sr);
     $roll = $info[0]["employeenumber"][0];
-    
+
     //print_r($info);
     $ldap_id = $info[0]['dn'];
     if(@ldap_bind($ds,$ldap_id,$ldap_password)){
@@ -44,5 +44,4 @@ function ldap_auth($ldap_id, $ldap_password){
 
 }
 
-echo ldap_auth($_GET['user'], $_GET['pass']);
-
+echo ldap_auth($_POST['user'], $_POST['pass']);

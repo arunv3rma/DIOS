@@ -49,7 +49,7 @@
             <div class="navbar-header">
                 <a href="http://ieor.iitb.ac.in">
                     <div class="medium-4 columns text-center">
-                        <h2><b>IEOR Department<b></h2>
+                        <h2><b>IEOR Department Internal Online System(DIOS)<b></h2>
                         <!-- <img id = "header_image" ; alt="Meet Mentor" src="../logo.png" width="100%" height="100%"></a> -->
                     </div>
                 </a>
@@ -58,9 +58,9 @@
             <!-- Right side of Header i.e. SignUp -->
             <ul class="nav navbar-top-links navbar-right">
 
-                <li class="dropdown">
+                <!-- <li class="dropdown">
                     <a href="signup.php"><button class ="btn btn-primary" ><b>Sign Up</b> </button></a>
-                </li>
+                </li> -->
 
             </ul>
         </nav>
