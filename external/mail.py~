@@ -22,6 +22,7 @@ import smtplib
 to = 'prashant.palkar@iitb.ac.in'
 user = 'v.arun'
 pwd = '*****'
+user1 = 'nh'
 smtpserver = smtplib.SMTP("smtp-auth.iitb.ac.in",25)
 smtpserver.ehlo()
 smtpserver.starttls()
@@ -29,7 +30,7 @@ smtpserver.ehlo()
 smtpserver.esmtp_features['auth']='LOGIN DIGEST-MD5 PLAIN'
 
 smtpserver.login(user, pwd)
-header = 'To:' + to + '\n' + 'From: ' + user + '@iitb.ac.in\n' + 'Subject:Leave Application \n'
+header = 'To:' + to + '\n' + 'From: ' + user1 + '@iitb.ac.in\n' + 'Subject:Leave Application \n'
 msg = header + '\n Student applied for leave. Please visit IEOR leave management portal to approve or disprove.\n\n'
 smtpserver.sendmail(user, to, msg)
 smtpserver.close()
